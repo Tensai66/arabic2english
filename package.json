@@ -1,0 +1,14 @@
+{
+  "name": "voyagin",
+  "version": "1.0.0",
+  "description": "Convert arabic numerals into english numerals",
+  "main": "arabic2english.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "Mayur Khatri",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
