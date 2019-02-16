@@ -4,7 +4,8 @@
   "description": "Convert arabic numerals into english numerals",
   "main": "arabic2english.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "start": "node ./arabic2english.js"
   },
   "author": "Mayur Khatri",
   "license": "ISC",

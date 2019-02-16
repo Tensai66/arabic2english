@@ -17,4 +17,11 @@ function arabic2english(numeral) {
   return arabic2english(~~(numeral / 1000)) + ' thousand' + ((numeral % 1000 != 0) ? ' ' + arabic2english(numeral % 1000) : '');
 }
 
-module.exports = arabic2english;
+if (process.argv[2] === undefined) {
+  module.exports = arabic2english;
+} else {
+  module.exports.arabic2english = function (value) {
+    console.log(arabic2english(value));
+  }
+  this.arabic2english(process.argv[2]);
+}
